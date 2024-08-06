@@ -8,7 +8,7 @@ class SlowAPI:
         print(env)
         headers = [('Content-Type', 'text/plain')]
         start_res("200 OK", headers)
-        return [b"Hello, Musharaf"]
+        return [b"Hello, "]
 
     def get(self , path=None):
         def wrapper(handler):
