@@ -3,6 +3,10 @@ from main import SlowAPI
 
 slow = SlowAPI()
 
-@slow.get('/users')
+@slow.get("/users")
 def get_users(req,res):
-    res.send('musharaf','parwez')
+    res.send(['musharaf','parwez'])
+
+@slow.get("/users")
+def get_users(req,res):
+    res.send(['parwez' , 'musharaf'])
